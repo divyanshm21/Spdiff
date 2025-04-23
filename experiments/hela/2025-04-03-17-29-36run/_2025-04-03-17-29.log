@@ -1,0 +1,245 @@
+2025-04-03-17-29-36
+Config:
+('lr', 0.005)
+('nei_padding_mask', True)
+('batch_size', 32)
+('train_data_ratio', 1)
+('diffusion_steps', 50)
+('variance_mode', 'linear')
+('val_mode', 'multistep')
+('diffnet', 'Diffuser_ped_inter_geometric_cond_w_history')
+('yt_encoder_layers', 3)
+('spatial_emsize', 128)
+('spatial_encoder_head', 4)
+('spatial_encoder_layers', 2)
+('dropout', 0.3)
+('esti_goal', 'acce')
+('history_dim', 6)
+('history_emsize', 64)
+('history_lstm', 128)
+('history_lstm_out', 64)
+('ped_encode_dim1', 64)
+('ped_encode_hid1', [64, 64])
+('ped_encode_dim2', 64)
+('ped_encode2_layers', 4)
+('egnn_layers', 3)
+('egnn_hid_dim', 64)
+('obs_seq_len', 8)
+('pred_seq_len', 20)
+('epochs', -1)
+('save_model', True)
+('finetune', True)
+('total_epochs', 160)
+('data_config', 'configs/data_configs/data_finetune_hela.yaml')
+('rebuild_dataset', True)
+('data_dict_path', 'dataset_built/pretrain_ucy_0403_trainonreal_mt_fn10_t3v1.pkl')
+('model_sd_path', False)
+('finetune_trainmode', 'multistep')
+('time_decay', 0.9)
+('use_col_focus_loss', False)
+('collision_threshold', 0.5)
+('dataset_type', 'timeindex')
+('finetune_flag', 1)
+('valid_steps', 10)
+('data_dir', 'processed_data_sf')
+('topk_ped', 6)
+('sight_angle_ped', 90)
+('dist_threshold_ped', 4)
+('topk_obs', 10)
+('sight_angle_obs', 90)
+('dist_threshold_obs', 4)
+('skip_frames', 11)
+('num_history_feature', 8)
+('num_history_velocity', 1)
+('train_mode', 'multi')
+('eval_batch_size', 256)
+('k_eval', 25)
+('seed', 666)
+('eval_every', 10)
+('eval_at', 80)
+('eval_mode', False)
+('device', 'cuda')
+('note', 'None')
+('config', 'configs/hela.yaml')
+('dataset', '')
+('exp_name', 'hela')
+
+
+Eval on:
+
+
+
+#Trainable Parameters: 226536
+
+
+('ft_lr', 5e-05)
+Epoch 0 MSE: nan MAE: nan
+Epoch 0 OT: nan MMD: nan
+Epoch 0 collision: 0.0 FDE: 4.120538711547852
+Epoch 0 dtw: 1.9518146691498932 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 10 MSE: nan MAE: nan
+Epoch 10 OT: nan MMD: nan
+Epoch 10 collision: 0.0 FDE: 4.094478607177734
+Epoch 10 dtw: 1.947777231534322 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 20 MSE: nan MAE: nan
+Epoch 20 OT: nan MMD: nan
+Epoch 20 collision: 0.0 FDE: 4.0676116943359375
+Epoch 20 dtw: 1.9457426556834467 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 30 MSE: nan MAE: nan
+Epoch 30 OT: nan MMD: nan
+Epoch 30 collision: 0.0 FDE: 4.030666351318359
+Epoch 30 dtw: 1.9440889358520508 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 40 MSE: nan MAE: nan
+Epoch 40 OT: nan MMD: nan
+Epoch 40 collision: 0.0 FDE: 3.9824626445770264
+Epoch 40 dtw: 1.9430560226793643 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 50 MSE: nan MAE: nan
+Epoch 50 OT: nan MMD: nan
+Epoch 50 collision: 0.0 FDE: 3.9492413997650146
+Epoch 50 dtw: 1.9515336398725156 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 60 MSE: nan MAE: nan
+Epoch 60 OT: nan MMD: nan
+Epoch 60 collision: 0.0 FDE: 3.9868252277374268
+Epoch 60 dtw: 1.983831772097835 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 70 MSE: nan MAE: nan
+Epoch 70 OT: nan MMD: nan
+Epoch 70 collision: 0.0 FDE: 4.120944976806641
+Epoch 70 dtw: 2.0536300341288247 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 80 MSE: nan MAE: nan
+Epoch 80 OT: nan MMD: nan
+Epoch 80 collision: 0.0 FDE: 4.286782741546631
+Epoch 80 dtw: 2.148883475197686 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 90 MSE: nan MAE: nan
+Epoch 90 OT: nan MMD: nan
+Epoch 90 collision: 0.0 FDE: 4.2750563621521
+Epoch 90 dtw: 2.1963468657599554 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 100 MSE: nan MAE: nan
+Epoch 100 OT: nan MMD: nan
+Epoch 100 collision: 0.0 FDE: 4.124745845794678
+Epoch 100 dtw: 2.187221301926507 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 110 MSE: nan MAE: nan
+Epoch 110 OT: nan MMD: nan
+Epoch 110 collision: 0.0 FDE: 4.05251407623291
+Epoch 110 dtw: 2.2473123691700123 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 120 MSE: nan MAE: nan
+Epoch 120 OT: nan MMD: nan
+Epoch 120 collision: 0.0 FDE: 4.161501884460449
+Epoch 120 dtw: 2.3032608694500394 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 130 MSE: nan MAE: nan
+Epoch 130 OT: nan MMD: nan
+Epoch 130 collision: 0.0 FDE: 4.981752395629883
+Epoch 130 dtw: 2.516293845794819 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 140 MSE: nan MAE: nan
+Epoch 140 OT: nan MMD: nan
+Epoch 140 collision: 0.0 FDE: 6.334314823150635
+Epoch 140 dtw: 2.954352131596318 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 150 MSE: nan MAE: nan
+Epoch 150 OT: nan MMD: nan
+Epoch 150 collision: 0.0 FDE: 7.569207191467285
+Epoch 150 dtw: 3.3479336809228966 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 160 MSE: nan MAE: nan
+Epoch 160 OT: nan MMD: nan
+Epoch 160 collision: 0.0 FDE: 9.569241523742676
+Epoch 160 dtw: 3.9082513208742493 inter ped distance mmd: nan
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.

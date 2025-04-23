@@ -1,0 +1,131 @@
+2025-04-06-02-34-51
+Config:
+('lr', 1)
+('nei_padding_mask', True)
+('batch_size', 32)
+('train_data_ratio', 1)
+('diffusion_steps', 50)
+('variance_mode', 'linear')
+('val_mode', 'multistep')
+('diffnet', 'Diffuser_ped_inter_geometric_cond_w_history')
+('yt_encoder_layers', 3)
+('spatial_emsize', 128)
+('spatial_encoder_head', 4)
+('spatial_encoder_layers', 2)
+('dropout', 0.2)
+('esti_goal', 'acce')
+('history_dim', 6)
+('history_emsize', 64)
+('history_lstm', 128)
+('history_lstm_out', 64)
+('ped_encode_dim1', 64)
+('ped_encode_hid1', [64, 64])
+('ped_encode_dim2', 64)
+('ped_encode2_layers', 4)
+('egnn_layers', 3)
+('egnn_hid_dim', 64)
+('obs_seq_len', 8)
+('pred_seq_len', 20)
+('epochs', -1)
+('save_model', True)
+('finetune', True)
+('total_epochs', 160)
+('data_config', 'configs/data_configs/data_finetune_hela.yaml')
+('rebuild_dataset', True)
+('data_dict_path', 'dataset_built/pretrain_ucy_0403_trainonreal_mt_fn10_t3v1.pkl')
+('model_sd_path', False)
+('finetune_trainmode', 'multistep')
+('time_decay', 0.9)
+('use_col_focus_loss', False)
+('collision_threshold', 0.5)
+('dataset_type', 'timeindex')
+('finetune_flag', 1)
+('valid_steps', 10)
+('data_dir', 'processed_data_sf')
+('topk_ped', 6)
+('sight_angle_ped', 90)
+('dist_threshold_ped', 4)
+('topk_obs', 10)
+('sight_angle_obs', 90)
+('dist_threshold_obs', 4)
+('skip_frames', 11)
+('num_history_feature', 8)
+('num_history_velocity', 1)
+('train_mode', 'multi')
+('eval_batch_size', 256)
+('k_eval', 25)
+('seed', 666)
+('eval_every', 10)
+('eval_at', 80)
+('eval_mode', False)
+('device', 'cuda')
+('note', 'None')
+('config', 'configs/hela.yaml')
+('dataset', '')
+('exp_name', 'hela')
+
+
+Eval on:
+
+
+
+#Trainable Parameters: 226536
+
+
+('ft_lr', 0.01)
+Epoch 0 MSE: 114.77239227294922 MAE: 6.98560094833374
+Epoch 0 OT: 115.5460917154948 MMD: 0.002346770962079366
+Epoch 0 collision: 0.0 FDE: 8.241077423095703
+Epoch 0 dtw: 3.9036293382997864 inter ped distance mmd: 0.0
+ 
+Epoch 10 MSE: 1283.2069091796875 MAE: 20.39951515197754
+Epoch 10 OT: 969.8040893554687 MMD: 0.024611961841583253
+Epoch 10 collision: 0.0 FDE: 33.13528060913086
+Epoch 10 dtw: 10.744621241534198 inter ped distance mmd: 0.0
+ 
+Epoch 20 MSE: 2935.23681640625 MAE: 30.334491729736328
+Epoch 20 OT: 1875.3206787109375 MMD: 0.08427483240763346
+Epoch 20 collision: 0.0 FDE: 40.568180084228516
+Epoch 20 dtw: 14.740960536179719 inter ped distance mmd: 0.0
+ 
+Epoch 30 MSE: 2342030.75 MAE: 495.6521301269531
+Epoch 30 OT: 762529.8131266276 MMD: 0.5193151076634724
+Epoch 30 collision: 0.0 FDE: 856.7959594726562
+Epoch 30 dtw: 183.47301092854252 inter ped distance mmd: 0.0
+ 
+Epoch 40 MSE: 451.4716491699219 MAE: 14.74803352355957
+Epoch 40 OT: 456.1899444580078 MMD: 0.012567684054374695
+Epoch 40 collision: 0.0 FDE: 15.603469848632812
+Epoch 40 dtw: 7.35354017328333 inter ped distance mmd: 0.0
+ 
+Epoch 50 MSE: 27964286976.0 MAE: 44151.09375
+Epoch 50 OT: 5138547128.091854 MMD: 0.9292439232269923
+Epoch 50 collision: 0.0 FDE: 144157.171875
+Epoch 50 dtw: 15931.232117193716 inter ped distance mmd: 0.0
+ 
+Epoch 60 MSE: 495144.96875 MAE: 225.77081298828125
+Epoch 60 OT: 46660.17849934896 MMD: 0.3742371439933777
+Epoch 60 collision: 0.0 FDE: 562.6397094726562
+Epoch 60 dtw: 85.67160136611373 inter ped distance mmd: 0.0
+ 
+Epoch 70 MSE: 2.0647185967387658e+35 MAE: 1.205820572387246e+17
+Epoch 70 OT: 2.369672021104959e+37 MMD: 1.9313033103942872
+Epoch 70 collision: 0.0 FDE: 4.26949161158443e+17
+Epoch 70 dtw: 4.3469086382323864e+16 inter ped distance mmd: 0.0
+ 
+Epoch 80 MSE: inf MAE: inf
+Epoch 80 OT: nan MMD: nan
+Epoch 80 collision: 0.0 FDE: inf
+Epoch 80 dtw: inf inter ped distance mmd: 0.0
+ 
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+NaN or Inf found in input tensor.
+Epoch 90 MSE: 472353312.0 MAE: 3404.73681640625
+Epoch 90 OT: 4103508.852266439 MMD: 0.12574310799439747
+Epoch 90 collision: 0.0 FDE: 9504.1494140625
+Epoch 90 dtw: 1236.8567090917516 inter ped distance mmd: 0.0
+ 

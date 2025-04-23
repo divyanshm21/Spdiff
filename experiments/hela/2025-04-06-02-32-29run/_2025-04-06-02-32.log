@@ -1,0 +1,95 @@
+2025-04-06-02-32-29
+Config:
+('lr', 0.001)
+('nei_padding_mask', True)
+('batch_size', 32)
+('train_data_ratio', 1)
+('diffusion_steps', 50)
+('variance_mode', 'linear')
+('val_mode', 'multistep')
+('diffnet', 'Diffuser_ped_inter_geometric_cond_w_history')
+('yt_encoder_layers', 3)
+('spatial_emsize', 128)
+('spatial_encoder_head', 4)
+('spatial_encoder_layers', 2)
+('dropout', 0.2)
+('esti_goal', 'acce')
+('history_dim', 6)
+('history_emsize', 64)
+('history_lstm', 128)
+('history_lstm_out', 64)
+('ped_encode_dim1', 64)
+('ped_encode_hid1', [64, 64])
+('ped_encode_dim2', 64)
+('ped_encode2_layers', 4)
+('egnn_layers', 3)
+('egnn_hid_dim', 64)
+('obs_seq_len', 8)
+('pred_seq_len', 20)
+('epochs', -1)
+('save_model', True)
+('finetune', True)
+('total_epochs', 160)
+('data_config', 'configs/data_configs/data_finetune_hela.yaml')
+('rebuild_dataset', True)
+('data_dict_path', 'dataset_built/pretrain_ucy_0403_trainonreal_mt_fn10_t3v1.pkl')
+('model_sd_path', False)
+('finetune_trainmode', 'multistep')
+('time_decay', 0.9)
+('use_col_focus_loss', False)
+('collision_threshold', 0.5)
+('dataset_type', 'timeindex')
+('finetune_flag', 1)
+('valid_steps', 10)
+('data_dir', 'processed_data_sf')
+('topk_ped', 6)
+('sight_angle_ped', 90)
+('dist_threshold_ped', 4)
+('topk_obs', 10)
+('sight_angle_obs', 90)
+('dist_threshold_obs', 4)
+('skip_frames', 11)
+('num_history_feature', 8)
+('num_history_velocity', 1)
+('train_mode', 'multi')
+('eval_batch_size', 256)
+('k_eval', 25)
+('seed', 666)
+('eval_every', 10)
+('eval_at', 80)
+('eval_mode', False)
+('device', 'cuda')
+('note', 'None')
+('config', 'configs/hela.yaml')
+('dataset', '')
+('exp_name', 'hela')
+
+
+Eval on:
+
+
+
+#Trainable Parameters: 226536
+
+
+('ft_lr', 1e-05)
+Epoch 0 MSE: 114.77239227294922 MAE: 6.98560094833374
+Epoch 0 OT: 115.5460917154948 MMD: 0.002346770962079366
+Epoch 0 collision: 0.0 FDE: 8.241077423095703
+Epoch 0 dtw: 3.9036293382997864 inter ped distance mmd: 0.0
+ 
+Epoch 10 MSE: 114.7234878540039 MAE: 6.989562034606934
+Epoch 10 OT: 115.50085856119792 MMD: 0.0023436586062113443
+Epoch 10 collision: 0.0 FDE: 8.227139472961426
+Epoch 10 dtw: 3.900988720081471 inter ped distance mmd: 0.0
+ 
+Epoch 20 MSE: 114.69943237304688 MAE: 6.994587421417236
+Epoch 20 OT: 115.47948379516602 MMD: 0.0023411144812901814
+Epoch 20 collision: 0.0 FDE: 8.213606834411621
+Epoch 20 dtw: 3.8987608838964394 inter ped distance mmd: 0.0
+ 
+Epoch 30 MSE: 114.64263153076172 MAE: 6.998060703277588
+Epoch 30 OT: 115.42364705403646 MMD: 0.0023378908634185793
+Epoch 30 collision: 0.0 FDE: 8.198506355285645
+Epoch 30 dtw: 3.896546513945968 inter ped distance mmd: 0.0
+ 
