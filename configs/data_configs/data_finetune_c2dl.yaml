@@ -1,0 +1,8 @@
+train:
+  - './data_origin/C2DL_dataset/c2dl_Dataset_time1200-1300_timeunit0.10.npy'
+  - './data_origin/C2DL_dataset/c2dl_Dataset_time1300-1400_timeunit0.10.npy'
+  - './data_origin/C2DL_dataset/c2dl_Dataset_time1400-1500_timeunit0.10.npy'
+
+valid:
+  - './data_origin/C2DL_dataset/c2dl_Dataset_time1500-1600_timeunit0.10.npy'
+

@@ -1,0 +1,8 @@
+train:
+  - './data_origin/HeLa_dataset/HeLa_Dataset_time000-025_timeunit0.10.npy'
+  - './data_origin/HeLa_dataset/HeLa_Dataset_time025-050_timeunit0.10.npy'
+  - './data_origin/HeLa_dataset/HeLa_Dataset_time075-084_timeunit0.10.npy'
+
+valid:
+  - './data_origin/HeLa_dataset/HeLa_Dataset_time050-075_timeunit0.10.npy'
+
